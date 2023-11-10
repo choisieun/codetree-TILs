@@ -1,8 +1,8 @@
 class Node:
     def __init__(self, data):
         self.data = data
-        self.next = Node
-        self.prev = Node
+        self.next = None
+        self.prev = None
 
 class DoublyLinkedList:
     def __init__(self):
@@ -17,12 +17,12 @@ class DoublyLinkedList:
         if self.head != None:
             self.head.prev = new_node
             self.head = new_node
-            new_node.prev = Node
+            new_node.prev = None
 
         else:
             self.head = new_node
             self.tail = new_node
-            new_node.prev = Node
+            new_node.prev = None
 
         self.node_num += 1
 
