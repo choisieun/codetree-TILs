@@ -47,7 +47,7 @@ class DoublyLinkedList:
             print("List is empty")
 
         elif self.head.next == None:
-            temp = self.haed
+            temp = self.head
 
             self.head = None
             self.tail = None
